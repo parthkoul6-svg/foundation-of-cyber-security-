@@ -1,0 +1,73 @@
+# Experiment: Cryptographic Hash Functions
+
+**Aim:** To study the properties of cryptographic hash functions and understand their role in ensuring data integrity and security.
+
+**Requirements:** Computer, Internet access, virtual lab website, and web browser.
+
+## Theory
+
+A cryptographic hash function is a mathematical algorithm that converts an input of arbitrary length into a fixed-length output called a hash value or message digest.
+
+Hash functions are used in password verification, digital signatures, file integrity checking, and other security applications.
+
+### Properties of Cryptographic Hash Functions
+
+1. **Pre-image Resistance:** Given a hash value h(x), it should be computationally infeasible to determine the original input (x).
+
+2. **Second Pre-image Resistance:** Given an input (x1) and its hash, it should be computationally infeasible to find a different input (x2) such that:
+
+   h(x1) = h(x2)
+
+3. **Collision Resistance:** It should be computationally infeasible to find any two distinct inputs (x1) and (x2) that produce the same hash value.
+
+### Common Hashing Algorithms
+
+- **MD5 (Message Digest Algorithm 5):** Produces a 128-bit hash but is considered insecure for collision-resistant applications.
+- **SHA-1 (Secure Hash Algorithm 1):** Produces a 160-bit hash but is no longer considered secure against collisions.
+- **SHA-256 (Secure Hash Algorithm 256):** Produces a 256-bit hash and is widely used for security applications.
+
+## Procedure
+
+### A. Hashing
+
+1. Open the Cryptographic Hash Function Properties virtual lab website.
+2. Select the Hashing option from the left panel.
+3. Enter a message in the input box.
+4. Select a hashing algorithm, such as SHA-256.
+5. Generate the hash value and observe the output.
+6. Change the input message and generate its hash again.
+7. Compare the hash values obtained.
+
+### B. Pre-image Resistance
+
+1. Select the Pre-image option.
+2. Click on Generate Hash to obtain the hash of a hidden input.
+3. Try to guess the original input.
+4. Click Submit Guess to verify the guess.
+5. Observe whether the guessed input produces the expected hash value.
+
+### C. Second Pre-image Resistance
+
+1. Select the Second Pre-image option.
+2. Observe the original input and its hash value.
+3. Enter a different input.
+4. Click Check Match.
+5. Observe whether the hash values match or not.
+
+### D. Collision Resistance
+
+1. Select the Collision Resistance option.
+2. Choose a hashing algorithm, such as SHA-256.
+3. Enter an original message and generate its hash.
+4. Enter a different message and generate its hash.
+5. Compare both hash values and observe the result.
+
+## Result
+
+The experiment demonstrated the working of cryptographic hash functions and their important properties: pre-image resistance, second pre-image resistance, and collision resistance. These properties help protect data integrity and support secure communication and authentication systems.
+
+## Precautions
+
+1. Use the same hashing algorithm when comparing hashes.
+2. Enter the messages carefully and note the exact input.
+3. Do not confuse hashing with encryption. Hashing is not designed to be reversed using a decryption key.
