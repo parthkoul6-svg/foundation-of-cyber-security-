@@ -1,0 +1,130 @@
+Experiment 6: MD5 Data Transformation
+
+Aim To understand the MD5 data transformation process and generate the MD5 hash value for a given input using the Virtual Lab.
+
+Tools Required
+
+1. Computer / Laptop
+2. Internet connection
+3. Web browser
+4. Virtual Lab (MD5 Data Transformation)
+
+Theory
+
+MD5 (Message Digest Algorithm 5) is a cryptographic hash function that takes an input message of any length and produces a fixed 128-bit hash value, represented by 32 hexadecimal characters. It was designed for data integrity verification and is commonly used to generate digital fingerprints of files or data.
+
+Even a small change in the input message can produce a completely different hash value. MD5 is a one-way function, meaning that recovering the original input from its hash is generally computationally infeasible. However, MD5 is considered cryptographically weak because of known collision vulnerabilities and is not recommended for security-critical applications.
+
+Procedure
+
+1. Open the MD5 Data Transformation experiment in Virtual Labs.
+2. Read the experiment objective and instructions.
+3. Enter the input message in the given text box.
+4. Perform the simulation stages in the specified order: Padding, Initialization, Add Function, Add Buffer A, Add Sub-Blocks, Add Constants, Circular Shift, Buffer Update, Store in Buffer B, and Buffer Shift.
+5. Click **SHOW MD5 HASH VALUE** to generate the final hash.
+6. Observe and record the result.
+7. Repeat the process with different input messages, if required.
+
+Simulation (Virtual Lab Steps)
+
+**Virtual Lab:** [MD5 Data Transformation](https://ics-amrt.vlabs.ac.in/exp/md5-data-transformation/)
+
+The following steps describe the simulation. The corresponding screenshots are available in [Screenshots & Execution.pdf](Screenshots%20%26%20Execution.pdf).
+
+Step 1: Open the Virtual Lab
+
+Open the official MD5 Data Transformation Virtual Lab using the link above.
+
+Step 2: Start the Simulation
+
+Read the experiment instructions and open the simulation.
+
+Step 3: Enter the Input Message
+
+Enter `MirzaHussain` in the input text box and click **Generate**.
+
+**Screenshot:** [Screenshots & Execution.pdf] — Figure 1: Initial simulation screen.
+
+Step 4: Padding
+
+Click **PADDING** to observe how padding bits and the message length are added to prepare the message for processing in 512-bit blocks.
+
+**Screenshot:** [Screenshots & Execution.pdf]— Figure 2: Padding stage.
+
+Step 5: Initialization
+
+Click **INITIALIZATION** to initialize the four 32-bit buffer variables A, B, C and D.
+
+**Screenshot:** [Screenshots & Execution.pdf]— Figure 3: Initialization stage.
+
+Step 6: Add Function
+
+Click **ADD FUNCTION** to observe the nonlinear functions used during MD5 processing.
+
+**Screenshot:** [Screenshots & Execution.pdf]— Figure 4: Add Function stage.
+
+Step 7: Add Buffer A
+
+Click **ADD BUFFER A** to observe the buffer state used in the transformation process.
+
+**Screenshot:** [Screenshots & Execution.pdf]— Figure 5: Add Buffer A stage.
+
+Step 8: Add Sub-Blocks
+
+Click **ADD SUB-BLOCKS** to observe how the padded message is divided into blocks and smaller sub-blocks for processing.
+
+**Screenshot:** [Screenshots & Execution.pdf] — Figure 6: Add Sub-Blocks stage.
+
+Step 9: Add Constants
+
+Click **ADD CONSTANTS** to observe how predefined constants are incorporated into the MD5 transformation.
+
+**Screenshot:** [Screenshots & Execution.pdf]— Figure 7: Add Constants stage.
+
+Step 10: Circular Shift
+
+Click **CIRCULAR SHIFT** to observe the circular left-shift operation performed on intermediate values.
+
+**Screenshot:** [Screenshots & Execution.pdf]— Figure 8: Circular Shift stage.
+
+Step 11: Buffer Update
+
+Click **BUFFER UPDATE** to observe how the intermediate buffer values are updated during processing.
+
+**Screenshot:** [Screenshots & Execution.pdf]— Figure 9: Buffer Update stage.
+
+Step 12: Store in Buffer B
+
+Click **STORE IN BUFFER B** to observe the updated result being stored for the next stage.
+
+**Screenshot:** [Screenshots & Execution.pdf]— Figure 10: Store in Buffer B stage.
+
+Step 13: Buffer Shift
+
+Click **BUFFER SHIFT** to observe how the buffer values are shifted for the next iteration.
+
+**Screenshot:** [Screenshots & Execution.pdf]— Figure 11: Buffer Shift stage.
+
+Step 14: Display the Final MD5 Hash
+
+Click **SHOW MD5 HASH VALUE** after completing the simulation stages.
+
+For the input message `MirzaHussain`, the supplied screenshot displays the following hash:
+
+`836c8e399693899b46e57ff97c982cfe`
+
+**Screenshot:** [Screenshots & Execution.pdf]— Figure 12: Final MD5 hash value.
+
+Result
+
+The MD5 data transformation process was studied using the Virtual Lab. The input message was processed through the simulation stages, and the final 128-bit hash value was displayed.
+
+Conclusion
+
+The experiment demonstrated the basic working of the MD5 hashing algorithm, including message padding, initialization, nonlinear functions, buffer operations, constants and circular shifts. It showed how an input message is transformed into a fixed-length hash value.
+
+References
+
+1. [MD5 Data Transformation Virtual Lab](https://ics-amrt.vlabs.ac.in/exp/md5-data-transformation/)
+2. [Virtual Labs — Official Website](https://www.vlab.co.in/)
+3. [RFC 1321 — The MD5 Message-Digest Algorithm](https://www.rfc-editor.org/rfc/rfc1321)
